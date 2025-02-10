@@ -1,15 +1,14 @@
+import React from 'react'
 
-import './App.css';
-import myForm from './components/MyForm';
+// import { MyForm } from './components/MyForm';
+import UseEffectEx from './hookexamples/UseEffectEx';
 
-
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-     <MyForm></MyForm>
-     </div>
-  );
+    <div>
+      {/* <ClassComponent/> */}
+      {/* <MyForm/> */}
+      <UseEffectEx/>
+    </div>
+  )
 }
-
-export default App;
