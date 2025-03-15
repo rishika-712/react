@@ -1,21 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from "react";
 
 function App() {
-    const [message, setMessage] = useState('');
-
-    useEffect(() => {
-        axios.get('http://localhost:5000/')
-            .then(response => setMessage(response.data))
-            .catch(error => console.error(error));
-    }, []);
-
-    return (
-        <div>
-            <h1>MERN E-Commerce</h1>
-            <p>{message}</p>
-        </div>
-    );
+  return (
+    <div>
+      <h1>MERN E-Commerce</h1>
+    </div>
+  );
 }
 
 export default App;
